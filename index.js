@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const fs = require('fs');
 const client = new Discord.Client();
+const token = process.env.token;
 var prefix = ".";
 
 const warns = JSON.parse(fs.readFileSync('./warns.json'))
